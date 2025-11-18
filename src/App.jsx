@@ -24,7 +24,7 @@ function App() {
       <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded bg-blue-600" />
+            <div className="h-8 w-8 rounded bg-[#E2231A]" />
             <span className="text-sm font-semibold text-slate-900">NCUK</span>
           </div>
           <nav className="hidden gap-6 text-sm text-slate-700 md:flex">
@@ -33,7 +33,7 @@ function App() {
             <a href="#process" className="hover:text-slate-900">Process</a>
             <a href="#partner-form" className="hover:text-slate-900">Enquire</a>
           </nav>
-          <a href="#partner-form" className="hidden rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 md:inline-flex">Enquire</a>
+          <a href="#partner-form" className="hidden rounded-lg bg-[#E2231A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#c71c15] md:inline-flex">Enquire</a>
         </div>
       </header>
 

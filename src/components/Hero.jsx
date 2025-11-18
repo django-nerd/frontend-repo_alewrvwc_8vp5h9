@@ -4,10 +4,19 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
   const bgStyle = useMemo(
     () => ({
       backgroundImage:
-        'radial-gradient(60rem 30rem at 10% 10%, rgba(59,130,246,0.15), transparent 60%), radial-gradient(50rem 20rem at 90% 20%, rgba(14,165,233,0.15), transparent 60%)',
+        'radial-gradient(60rem 30rem at 10% 10%, rgba(226,35,26,0.10), transparent 60%), radial-gradient(50rem 20rem at 90% 20%, rgba(226,35,26,0.08), transparent 60%)',
     }),
     []
   )
+
+  const logos = [
+    { name: 'Manchester', url: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/University_of_Manchester_logo.svg' },
+    { name: 'Bristol', url: 'https://upload.wikimedia.org/wikipedia/commons/2/20/University_of_Bristol_logo.svg' },
+    { name: 'UNSW', url: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/UNSW_Sydney_coat_of_arms.svg' },
+    { name: 'Alberta', url: 'https://upload.wikimedia.org/wikipedia/en/2/2e/University_of_Alberta_Seal.svg' },
+    { name: 'Sheffield', url: 'https://upload.wikimedia.org/wikipedia/en/2/2e/University_of_Sheffield_shield.svg' },
+    { name: 'Leeds', url: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/University_of_Leeds_Logo.svg' },
+  ]
 
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
@@ -23,7 +32,7 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
               Launch new revenue streams with guaranteed access to 60+ universities—underpinned by a 35‑year, university‑owned academic pedigree.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button onClick={onPrimaryClick} className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-600">
+              <button onClick={onPrimaryClick} className="inline-flex items-center justify-center rounded-lg bg-[#E2231A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#E2231A]/20 transition hover:bg-[#c71c15]">
                 Enquire about Accreditation
               </button>
               <button onClick={onSecondaryClick} className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/10">
@@ -33,11 +42,11 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
             <p className="mt-4 text-sm text-slate-300">NCUK was established by leading universities to deliver world‑class pathways with rigorous quality assurance.</p>
           </div>
           <div className="relative">
-            <div className="mx-auto aspect-video w-full max-w-xl rounded-2xl border border-white/10 bg-gradient-to-br from-blue-600/20 to-cyan-500/10 p-6 shadow-2xl">
+            <div className="mx-auto aspect-video w-full max-w-xl rounded-2xl border border-white/10 bg-gradient-to-br from-[#E2231A]/20 to-rose-500/10 p-6 shadow-2xl">
               <div className="grid h-full grid-cols-3 grid-rows-2 place-items-center gap-4">
-                {['Manchester','Bristol','UNSW','Alberta','Sheffield','Leeds'].map((name) => (
-                  <div key={name} className="flex h-20 w-24 items-center justify-center rounded-lg bg-white/5 text-xs text-white/80 backdrop-blur">
-                    {name}
+                {logos.map((l) => (
+                  <div key={l.name} className="flex h-20 w-24 items-center justify-center rounded-lg bg-white/5 backdrop-blur">
+                    <img src={l.url} alt={`${l.name} logo`} className="max-h-12 max-w-[5.5rem] object-contain opacity-90 invert-[.98] contrast-75" />
                   </div>
                 ))}
               </div>

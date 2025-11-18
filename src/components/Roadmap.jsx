@@ -17,7 +17,7 @@ function Roadmap() {
             <ol className="relative space-y-6 border-l-2 border-slate-200 pl-6">
               {steps.map((s) => (
                 <li key={s.n} className="group">
-                  <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">{s.n}</span>
+                  <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#E2231A] text-xs font-bold text-white">{s.n}</span>
                   <h3 className="text-lg font-semibold text-slate-900">{s.t}</h3>
                   <p className="text-slate-600">{s.d}</p>
                 </li>
@@ -28,7 +28,7 @@ function Roadmap() {
             <div className="sticky top-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-slate-900">Ready to begin?</h3>
               <p className="mt-2 text-slate-600">We’ll guide you through accreditation and launch with a dedicated team.</p>
-              <a href="#partner-form" className="mt-4 inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700">Enquire about Accreditation</a>
+              <a href="#partner-form" className="mt-4 inline-flex items-center justify-center rounded-lg bg-[#E2231A] px-5 py-3 text-sm font-semibold text-white hover:bg-[#c71c15]">Enquire about Accreditation</a>
             </div>
           </div>
         </div>

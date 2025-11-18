@@ -5,6 +5,8 @@ import TurnkeySolution from './components/TurnkeySolution'
 import TrustBattery from './components/TrustBattery'
 import Roadmap from './components/Roadmap'
 import LeadCapture from './components/LeadCapture'
+import Testimonials from './components/Testimonials'
+import CaseStudies from './components/CaseStudies'
 
 function App() {
   const formRef = useRef(null)
@@ -42,7 +44,9 @@ function App() {
       <div id="why"><WhyNCUK /></div>
       <div id="turnkey"><TurnkeySolution /></div>
       <TrustBattery />
+      <CaseStudies />
       <div id="process"><Roadmap /></div>
+      <Testimonials />
       <LeadCapture ref={formRef} />
 
       <footer className="border-t border-slate-200 bg-white py-8">

@@ -9,15 +9,6 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
     []
   )
 
-  const logos = [
-    { name: 'Manchester', url: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/University_of_Manchester_logo.svg' },
-    { name: 'Bristol', url: 'https://upload.wikimedia.org/wikipedia/commons/2/20/University_of_Bristol_logo.svg' },
-    { name: 'UNSW', url: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/UNSW_Sydney_coat_of_arms.svg' },
-    { name: 'Alberta', url: 'https://upload.wikimedia.org/wikipedia/en/2/2e/University_of_Alberta_Seal.svg' },
-    { name: 'Sheffield', url: 'https://upload.wikimedia.org/wikipedia/en/2/2e/University_of_Sheffield_shield.svg' },
-    { name: 'Leeds', url: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/University_of_Leeds_Logo.svg' },
-  ]
-
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-0 opacity-40" style={bgStyle} />
@@ -35,7 +26,7 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
               <button onClick={onPrimaryClick} className="inline-flex items-center justify-center rounded-lg bg-[#E2231A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#E2231A]/20 transition hover:bg-[#c71c15]">
                 Enquire about Accreditation
               </button>
-              <button onClick={onSecondaryClick} className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg-white/10">
+              <button onClick={onSecondaryClick} className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 backdrop-blur transition hover:bg:white/10">
                 Download Partner Prospectus
               </button>
             </div>
@@ -43,13 +34,7 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
           </div>
           <div className="relative">
             <div className="mx-auto aspect-video w-full max-w-xl rounded-2xl border border-white/10 bg-gradient-to-br from-[#E2231A]/20 to-rose-500/10 p-6 shadow-2xl">
-              <div className="grid h-full grid-cols-3 grid-rows-2 place-items-center gap-4">
-                {logos.map((l) => (
-                  <div key={l.name} className="flex h-20 w-24 items-center justify-center rounded-lg bg-white/5 backdrop-blur">
-                    <img src={l.url} alt={`${l.name} logo`} className="max-h-12 max-w-[5.5rem] object-contain opacity-90 invert-[.98] contrast-75" />
-                  </div>
-                ))}
-              </div>
+              <div className="grid h-full grid-cols-3 grid-rows-2 place-items-center gap-4"><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://global.iu.edu/images/partnerships/manchester_logo_wide.png" alt="Manchester logo" className="max-h-full max-w-[5.5rem] object-contain opacity-90"></img></div><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0-1V0hvsOQVwZF_5TmaWc_iA52wjFOyKUg&s" alt="Bristol logo" className="max-h-12 max-w-[5.5rem] object-contain opacity-90"></img></div><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://unglobalcompact.org.au/wp-content/uploads/2024/10/2.-Sydney-Landscape.png.webp" alt="UNSW logo" className="max-h-12 max-w-[5.5rem] object-contain "></img></div><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMCCEjKyQun9fzUUERO55q7kz0YRKn-vYwg&s" alt="Alberta logo" className="max-h-12 max-w-[5.5rem] object-contain"></img></div><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://www.russellgroup.ac.uk/sites/default/files/2025-01/UOSLogo_Primary_Violet_RGB.png" alt="Sheffield logo" className="max-h-12 max-w-[5.5rem] object-contain"></img></div><div className="flex h-20 w-24 items-center justify-center rounded-lg bg-white backdrop-blur"><img src="https://cdn.one-educationgroup.com/sites/2/2021/12/Leeds.png" alt="Leeds logo" className="max-h-12 max-w-[5.5rem] object-contain"></img></div></div>
             </div>
             <p className="mt-3 text-center text-xs text-slate-300">Visual mock‑up: partner universities shown for illustration.</p>
           </div>

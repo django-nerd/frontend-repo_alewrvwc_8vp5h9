@@ -11,7 +11,7 @@ function Roadmap() {
   return (
     <section className="bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 py-20">
-        <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">From Enquiry to Enrolment in Six Managed Steps</h2>
+        <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">From Enquiry to Partner in Six Managed Steps</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="md:col-span-2">
             <ol className="relative space-y-6 border-l-2 border-slate-200 pl-6">
